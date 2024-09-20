@@ -53,7 +53,11 @@ footer
 {
     background-color: #6c0606;
     color: white;
+}
 
+footer h2, footer p
+{
+    font-style: italic;
 }
 
 
@@ -222,11 +226,6 @@ span {
     padding: 5px;
 }
 
-#medina
-{
-    margin-top: 2%;
-
-}
 
 .home-img img:hover {
     transform: scale(1.05);
