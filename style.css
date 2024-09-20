@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    /* Fixed margin to 0 for consistency */
+    padding: 0;
+    /* Fixed padding to 0 for consistency */
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* This sets 1rem = 10px for easier scaling */
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    font-size: 1.6rem;
+    /* Default text size is now 16px (10px * 1.6) */
+}
+
+hr
+{
+    border-top: 1px dashed maroon;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgb(245, 233, 233);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+    /* Adjusted drop shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+footer
+{
+    background-color: #6c0606;
+    color: white;
+
+}
+
+
+.logo {
+    font-size: 3rem;
+    color: maroon;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    /* Fixed transition */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: maroon;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    /* Added transition for border */
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: black;
+    border-bottom: 3px solid maroon;
+}
+
+@media(max-width: 415px) {
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        /* Changed to auto for better responsiveness */
+        width: 40%;
+        border-left: 3px solid maroon;
+        border-bottom: 3px solid maroon;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem;
+        /* Changed to single value for clarity */
+        background-color: rgb(245, 233, 233);
+        border-top: 0.1rem solid black;
+        display: none;
+        /* Initially hide nav */
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid maroon;
+    }
+}
+
+section {
+    min-height: 100vh;
+    /* Fixed to ensure full height */
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Changed to align-items for better alignment */
+    gap: 8rem;
+    background-color: white;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 100px;
+}
+
+span {
+    color: maroon;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img {
+    border-radius: 5%;
+}
+
+.home-img img {
+    width: 35vw;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgb(245, 233, 233);
+    /* Fixed box-shadow syntax */
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    /* Added transform to scale on hover */
+}
+
+
+#uni-pics
+{
+    margin-bottom: 30% ;
+}
+
+/* #uni {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
+#uni-display {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bmv {
+    height: 100%;
+    padding: 0;
+    margin: 2% 9% 9% 9%;
+    text-align: center;
+}
+
+.pics img
+{
+    width: 50%;
+    display: flex;
+}
+
+.last-half
+{
+    display: flex   ;
+    justify-content: center;
+}
+
+.row
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column
+{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#medina
+{
+    margin-top: 2%;
+
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Changed to align-items for better alignment */
+    gap: 8rem;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.about .about-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.about .about-content h1:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 75%;
+    margin: 10px auto;
+}
+
+.team h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0;
+    /* Adjusted margin for better spacing */
+}
+
+.team h2:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 300px;
+    /* Same width as the About section */
+    margin: 10px auto;
+}
+
+.about .about-content h3 {
+    font-size: 5rem;
+    /* Adjusted font size for consistency */
+    margin: 0 0 3rem 0;
+    /* Simplified margins */
+    font-weight: 700;
+}
+
+/* Team Section */
+.profile {
+    margin-top: 50px;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+
+}
+
+.profile h2 {
+    font-size: 2.2rem;
+    /* Adjusted for better scaling */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 0.02;
+    /* Adjusted opacity for visibility */
+    background-color: rgb(125, 123, 123);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box:hover:after {
+    opacity: 0.1;
+    /* Made hover effect more noticeable */
+}
+
+
+/* Profile 1 */
+.about .about-content .paule-content h1 {
+    width: auto;
+    margin: 5% 0 2% 20%;
+    text-align: center;
+    padding: 0;
+    /* Fixed padding to 0 */
+}
+
+#krysta {}
+
+.about .paule-img {
+    transform: scale(1.05);
+}
+
+.paule-img img {
+    width: 35vw;
+    height: 35vw;
+    margin-top: 40px;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgb(245, 233, 233);
+    /* Fixed box-shadow syntax */
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    /* Added transform to scale on hover */
+}
+
+.sison-img img {
+    width: 35vw;
+    height: 35vw;
+    margin-top: 40px;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgb(245, 233, 233);
+    /* Fixed box-shadow syntax */
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    /* Added transform to scale on hover */
+}
+
+.sumbad-img img {
+    width: 35vw;
+    height: 35vw;
+    margin-top: 40px;
+    border-radius: 10%;
+    box-shadow: 0 0 30px rgb(245, 233, 233);
+    /* Fixed box-shadow syntax */
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    /* Added transform to scale on hover */
+}
+
+.button-3 {
+    appearance: none;
+    background-color: maroon;
+    border: 2px solid rgba(55, 100, 109, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    background-color: #bf0a0a;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(164, 109, 46, 0.4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #c36f6f;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #6c0606;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+  

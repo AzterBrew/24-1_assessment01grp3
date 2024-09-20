@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Corrected Google Fonts link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+<body> 
+    <header>
+        <a href="#" class="logo">GROUP 3</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="university.html">My University</a>
+        </nav>
+    </header>
+    
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+        <div class="about-content">
+            <h1><span>About The Group</span></h1>
+            <h3 class="typing-text"></h3>
+            <p style="text-align: center;">Group 3 consists of three dedicated members, each playing a crucial role in the development process. 
+                One member focuses on front-end development, ensuring that the user interface is visually appealing, intuitive, and responsive. 
+                The back-end developer is responsible for managing the server-side logic, databases, and ensuring seamless data flow between the client and server. 
+                The third member handles script writing, bringing interactivity to the website through well-structured and efficient code. 
+                Together, these roles complement each other, enabling the team to build dynamic and functional web applications.</p>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="text-center"><span>The Members </span></h2> <!-- Added Members Header -->
+            <div class="row">
+                <!-- Profile 1 -->
+                <div class="col-md-4 col-sm-12 profile text-center">
+                    <div class="home-img">
+                        <img src="M1-Paule.jpg" class="img-fluid" alt="Krysta M. Paule">
+                    </div>
+                    <h2>Krysta M. Paule</h2>
+                    <p style="text-align: justify;">My name is Krysta M. Paule, born on February 22, 2004, and currently living 
+                        in Orani, Bataan. At the moment, I am a third-year student enrolled in the Bachelor of Science 
+                        in Computer Science program, majoring in Software Development at Bataan Peninsula State University - 
+                        Main Campus. I have a fascination with technology and its advancement, and I love to challenge myself
+                        by expanding my knowledge in my chosen field. I aim to contribute to innovative software projects
+                        and advance my skills as a student and developer. I am also eager to learn with like-minded individuals and 
+                        work on projects that push the boundaries of what's possible in technology.</p>
+                    <a href="paulekrysta.html" class="btn">Read More</a>
+                </div>
+                <!-- Profile 2 -->
+                <div class="col-md-4 col-sm-12 profile text-center">
+                    <div class="home-img">
+                        <img src="M2-Sison.jpg" class="img-fluid" alt="Francheska Rae S. Sison">
+                    </div>
+                    <h2>Francheska Rae S. Sison</h2>
+                    <p style="text-align: justify;"></pstyle>I’m Francheska Rae S. Sison, born on August 24, 2004, and I live in Balanga City, Bataan. Currently, 
+                        I’m a third-year student in the Bachelor of Science in Computer Science program, focusing on Software 
+                        Development at Bataan Peninsula State University - Main Campus. I have a deep passion for coding and love 
+                        exploring new technologies. In my free time, I enjoy working on personal projects and collaborating with my 
+                        classmates on assignments. I’m eager to enhance my skills and contribute to innovative solutions in the tech 
+                        industry.
+                    
+                    </p>
+                    <a href="sisonfrancheskarae.html" class="btn">Read More</a>
+                </div>
+                <!-- Profile 3 -->
+                <div class="col-md-4 col-sm-12 profile text-center">
+                    <div class="home-img">
+                        <img src="M3-Sumbad.jpg" class="img-fluid" alt="Eloisa Marie M. Sumbad">
+                    </div>
+                    <h2>Eloisa Marie M. Sumbad</h2>
+                    <p style="text-align: justify;">My full name is Eloisa Marie Mendoza Sumbad. I currently study in Bataan Peninsula State University's Main Campus. 
+                        I am also under the Computer Science Program, Major in Software Development and a third year student. I take care of four cats that lives in our 
+                        house. One of them is Shanghai, and the other three are her children named Gray, Fishcake, and Ice. I also enjoy animations and drawing, especially ones 
+                        from TV Shows or games. One of my goals this year is to make a roblox game.</p>
+                    <a href="sumbadeloisamarie.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Bootstrap and Font Awesome Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+I
+<!-- Read More Script -->
+<script>
+    document.querySelector('.read-more-btn').addEventListener('click', function() {
+        const moreText = document.querySelector('.more-text');
+        const btnText = this;
+
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+            moreText.style.display = "inline";
+            btnText.textContent = "Read Less";
+        } else {
+            moreText.style.display = "none";
+            btnText.textContent = "Read More";
+        }
+    });
+</script>
+</body>
+</html>
